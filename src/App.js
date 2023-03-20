@@ -12,7 +12,7 @@ function App() {
 
       <div className="flex flex-col relative z-100 h-full w-full justify-center items-center px-10">
         <div className="flex flex-col items-start w-full mt-20">
-          <h1 className="text-white text-4xl font-style: Ariel mt-8">
+          <h1 className="text-white text-4xl font-style: Ariel mt-8 ">
             hellocare is for everyone
           </h1>
           <p className='text-white/50 mt-4 max-w-[60vw] text-left'>

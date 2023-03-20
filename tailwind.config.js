@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "white": "#FFF",
         "project-icon-blue": "#0000ff",
         "projcet-icon-pink": "#ff00ff",
         "project-icon-green": "#00ff00",
