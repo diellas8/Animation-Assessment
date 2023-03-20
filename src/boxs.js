@@ -1,8 +1,6 @@
 import React from 'react';
 
 
-
-
 const IconOne = () => {
 
 	return (
@@ -109,42 +107,49 @@ const boxes = [
 
 const Boxs = () => {
 
-
 	return (
 		<div className="grid grid-cols-3 py-3 gap-5 ml-20" >
-			{boxes.map(({
-				iconClassName,
-				title,
-				body,
-				icon: Icon,
-				boxHoverClassName
-			}) => (
-				<div
-					key={title}
-					className={`
-						bg-white rounded-3xl px-4 py-3 
+
+			{
+				boxes.map(({
+					iconClassName,
+					title,
+					body,
+					icon: Icon,
+					boxHoverClassName
+				}) => (
+					<div className="min-h-80 max-h-120 ml-2">
+						<div
+							key={title}
+							className={`
+						bg-white rounded-3xl px-8 py-7
 						transition-all duration-500 hover:text-white
 						${boxHoverClassName}
-						 h-80 w-64
+						 h-100 w-80
 					`}
-				>
-					<div className={`p-3 rounded-full sm:rounded-[full 3/4] lg:rounded-[full 2/3] w-24 h-32 border border-gray-300 ${iconClassName}`}>
-						<Icon />
-					</div>
-					<div className='mt-3'>
-						<h1 className="font-semibold text-xl">{title}</h1>
-						<div className='mt-4 relative'>
-							{body.map((p) => (
-								<p key={p} className="mb-8 text-black/50 text-sm hover:text-white">
-									{p}
-								</p>
-							))}
-							<IconFour className="mt-6 absolute bottom-0 left-0 transform scale-75" />
+						>
+							<div className={`p-3 rounded-full sm:rounded-[full 3/4] lg:rounded-[full 2/3] w-24 h-28 border border-gray-300 ${iconClassName}`}>
+								<Icon />
+							</div>
+							<div className='mt-3'>
+								<h1 className="font-semibold text-xl">{title}</h1>
+								<div className='mt-4 relative'>
+									{body.map((p) => (
+										<p key={p} className="mb-8 text-black/50 text-sm hover:text-white">
+											{p}
+										</p>
+									))}
+
+									<IconFour className="mt-6 absolute bottom-0 left-0 transform scale-75" />
+
+
+								</div>
+							</div>
+
 						</div>
 					</div>
-
-				</div>
-			))}
+				))
+			}
 		</div>
 	)
 }
