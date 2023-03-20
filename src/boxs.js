@@ -123,7 +123,7 @@ const Boxs = () => {
 					key={title}
 					className={`
 						bg-white rounded-3xl px-4 py-3 
-						transition-all duration-500
+						transition-all duration-500 hover:text-white
 						${boxHoverClassName}
 						 h-80 w-64
 					`}
@@ -132,7 +132,7 @@ const Boxs = () => {
 						<Icon />
 					</div>
 					<div className='mt-3'>
-						<h1 className="font-semibold text-xl">{title}</h1>
+						<h1 className="font-semibold text-xl ">{title}</h1>
 						<div className='mt-4 relative'>
 							{body.map((p) => (
 								<p key={p} className="mb-8 text-black/50 text-sm">
