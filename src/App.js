@@ -25,11 +25,6 @@ function App() {
           <Boxs />
         </div>
 
-
-
-
-
-
       </div>
 
     </div>
